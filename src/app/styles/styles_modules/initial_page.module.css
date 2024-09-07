@@ -1,0 +1,115 @@
+.main{
+    height: 93vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.title{
+    color: var(--color-cream);
+    font-family: var(--font-lexend);
+    font-size: 3rem;
+    max-width: 95vw;
+}
+.subtitle{
+    color: var(--color-cream);
+    font-family: var(--font-hahmlet);
+    font-size: 2.2rem;
+    max-width: 95vw;
+}
+.textMarc{
+    color: var(--color-orange);
+    text-shadow: 0 0 50px rgba(255, 255, 255, 0.2);
+}
+
+.btnRegister,
+.btnLogin{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+    color: var(--color-white);
+    padding: 1rem;
+    cursor: pointer;
+    font-family: var(--font-lexend);
+    border: 0.1rem solid var(--color-mostard);
+    border-radius: 0.5rem;
+    width: 20rem;
+    height: 3rem;
+    transition: 0.2s ease-in-out;
+}
+.btnRegister:hover,
+.btnLogin:hover{
+    background-color: var(--color-orange);
+    color: var(--color-brown)
+}
+.linkBtn{
+    text-decoration: none;
+}
+.divBtn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+.copyDiv{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1rem;
+}
+.copyText{
+    font-family: var(--font-hahmlet);
+    font-size: 0.8rem;
+    color: var(--color-cream);
+}
+
+@media (max-width: 1000px) {
+    .title{
+        font-size: 2rem;
+    }
+    .subtitle{
+        font-size: 1.5rem;
+    }
+    .btnRegister,
+    .btnLogin{
+        width: 13rem;
+        height: 3.5rem;
+    }
+}
+@media (max-width: 780px) {
+    .main{
+        text-align: center;
+    }
+    .title{
+        font-size: 2rem;
+    }
+    .subtitle{
+        font-size: 1.5rem;
+    }
+    .textMarc{
+        font-size: 1.6rem;
+    }
+
+    .btnRegister,
+    .btnLogin{
+        width: 13rem;
+        height: 3.5rem;
+    }
+}
+@media (max-width: 505px) {
+    .title{
+        font-size: 1.8rem;
+    }
+    .subtitle{
+        font-size: 1.3rem;
+    }
+    .textMarc{
+        font-size: 1.4rem;
+    }
+    .divBtn{
+        flex-direction: column;
+    }
+
+}
